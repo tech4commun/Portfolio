@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+body{
+    font-family: 'Inter', sans-serif !important;
+    font-size: 15px;
+    line-height: 2em;  /*em relative to font-size*/
+    color: #333;
+    font-weight: 400;
+    background: #bbb3b3;
+}
+.columns-block {
+    display: flex;/*block should be next to each other right & left*/
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.left-col-block{
+    width: 50%;
+    
+    overflow: hidden;
+    position: fixed;/*dont scroll*/
+    left:0;
+}
+.right-col-block{
+    width: 0%;
+    position: absolute;
+    right:0;
+}
+
+.header {
+    padding: 0;
+    margin: 0;
+    height: 100vh; /*it will occupies 100 percent height in part it is intialized*/
+    position: relative;
+    vertical-align: middle;
+}
+
+.header .profile-image{/*tells the browser to look for a .profile-image element that is located somewhere inside a .header element.*/
+    position: absolute;
+    left: 0;
+    top: 0%;
+    z-index: -1; /*to bring background text to front (increases the priority)*/
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/profile-image1.png);
+    background-size: cover;/*cover means fit into container*/
+    background-position: top center;
+}
+.header .profile-image:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+   background: linear-gradient(1deg, #e6e6fa 0%, #d8bfd8 18%, transparent 100%);
+}
+
+.header .content{
+    position: absolute;
+    /*top: 0%; i want content at bottom*/
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10%;
+}
+.header .content h1{
+    font-size: 36px;
+    color: rgb(126, 82, 229);
+    line-height: 1;
+    margin: 0;
+
+}
+.header .content p{
+    font-size: 24px;
+    color: rgb(88, 97, 202);
+}
+
+.header .content .social-icon{
+    margin: 0;
+    padding:0;
+    display:block;
+}
+.header .content .social-icon li{
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.header .content .social-icon a{
+    display: block;
+    font-size: 15px;
+    color: #4f5ceb;
+    height: 35px;
+    width: 35px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 100px;
+    border: 2px solid rgb(25, 223, 223);
+}
+.header .content .social-icon a:hover{
+    border-color: #d21919;
+}
+
+.section-wrapper{
+    padding: 50px;
+}
+
+.section-title{
+    margin-bottom: 15px;
+    
+}
