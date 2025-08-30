@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libertinus+Keyboard&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libertinus+Keyboard&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sacramento&family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap');
 body{
     font-family: 'Vend Sans', sans-serif !important;
     font-size: 15px;
@@ -41,7 +41,7 @@ body{
     z-index: -1; /*to bring background text to front (increases the priority)*/
     width: 100%;
     height: 100%;
-    background-image: url(../img/profile_image11.png);
+    background-image: url(../img/profile_image.png);
     background-size: cover;/*cover means fit into container*/
     background-position: top center;
 }
@@ -97,10 +97,11 @@ body{
 .fa-heart {
   animation: heartBeat 1.5s infinite; /* 1.5s duration, infinite loop */
 }
-
 }
+
 .header .content p{
-    font-size: 24px;
+    font-family: Sacramento;
+    font-size: 30px;
     color: rgb(152, 4, 132);
 }
 
@@ -137,3 +138,23 @@ body{
     margin-bottom: 15px;
     
 }
+
+.section-title h2{
+    color: rgb(197, 38, 178);
+}
+
+.grey-bg {
+    background: #E2DAF0;
+}
+
+.expertise-item{
+    margin-bottom: 20px;
+
+}
+.expertise-item h3{
+    margin-bottom: 5px;
+    color: #333;
+    font-weight:700;
+
+}
+
