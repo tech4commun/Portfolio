@@ -155,6 +155,10 @@ body{
     background: #E2DAF0;
 }
 
+.blue-bg {
+    background: #bfd4de;
+}
+
 .expertise-items{
     margin-bottom: 20px;
     animation: backInRight; /* referring directly to the animation's @keyframe declaration */
